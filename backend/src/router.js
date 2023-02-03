@@ -1,11 +1,8 @@
 const { json } = require('express');
 const express = require('express')
 
-
 const router = express.Router()
 
-router.get('/teste', (request, response) => {
-    return response.status(200).json()
-})
+router.get('/', (req, res) => { res.render("index") })
 
 module.exports = router;
